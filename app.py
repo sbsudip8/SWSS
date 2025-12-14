@@ -1,10 +1,10 @@
 import streamlit as st
 import numpy as np
-# from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
-# model = load_model("waste_classifier_final.h5")
+model = load_model("waste_classifier_final.h5")
 
 class_names = ['glass','metal','organic','paper','plastic','textile']
 
@@ -29,3 +29,4 @@ if uploaded:
 # .\.venv\Scripts\Activate.ps1
 
 # streamlit run app.py
+
